@@ -85,11 +85,12 @@ regress: clean compile
 .PHONY: testlist
 testlist:
 	./testlist.sh
-	# $(MAKE) merge_coverage
+	$(MAKE) merge_coverage
+	$(MAKE) view_coverage
 
 merge_coverage:
 	xml2ucdb -format Excel ./i2cmb_test_plan.xml ./i2cmb_test_plan.ucdb
-	add testbrowser ./*.ucdb
+	# add testbrowser ./*.ucdb
 	vcover merge -stats=none -strip 0 -totals i2cmb_test_plan.ucdb ./*.ucdb
 
 view_coverage:
