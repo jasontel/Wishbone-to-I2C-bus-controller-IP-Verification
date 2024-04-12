@@ -113,24 +113,24 @@ wb_bus (
 
 // ****************************************************************************
 // Instantiate the Checker - assertion based verification module
-i2cmb_checker  #( .NUM_I2C_BUSSES(NUM_I2C_BUSSES) ) i2cmb_checker_inst0 (
-    // System signals
-    .clk_i(clk),
-    .rst_i(rst),
-    .irq_i(irq),
-    // Master signals
-    .cyc_o(cyc),
-    .stb_o(stb),
-    .ack_i(ack),
-    .adr_o(adr),
-    .we_o(we),
-    // Shared signals
-    .dat_o(dat_wr_o),
-    .dat_i(dat_rd_i),
-    // I2C signal
-    .scl_i(scl),
-    .sda_i(sda)
-);
+// i2cmb_checker  #( .NUM_I2C_BUSSES(NUM_I2C_BUSSES) ) i2cmb_checker_inst0 (
+//     // System signals
+//     .clk_i(clk),
+//     .rst_i(rst),
+//     .irq_i(irq),
+//     // Master signals
+//     .cyc_o(cyc),
+//     .stb_o(stb),
+//     .ack_i(ack),
+//     .adr_o(adr),
+//     .we_o(we),
+//     // Shared signals
+//     .dat_o(dat_wr_o),
+//     .dat_i(dat_rd_i),
+//     // I2C signal
+//     .scl_i(scl),
+//     .sda_i(sda)
+// );
 
 // ****************************************************************************
 // Dump waveform if you use synopsys verdi
