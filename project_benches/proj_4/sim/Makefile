@@ -7,7 +7,7 @@ include $(ECE745_PROJECT_HOME)/verification_ip/interface_packages/handler_pkg/Ma
 include $(ECE745_PROJECT_HOME)/verification_ip/ncsu_pkg/Makefile
 include $(ECE745_PROJECT_HOME)/verification_ip/environment_packages/i2cmb_env_pkg/Makefile
 
-GEN_TYPE ?= i2cmb_generator_direct_test #i2cmb_generator_base
+GEN_TYPE ?= i2cmb_generator#_direct_test #i2cmb_generator_base
 TEST_SEED ?= random
 
 # if you execute "module load synopsys" then you can uncomment FSDB
